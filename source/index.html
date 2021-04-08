@@ -29,8 +29,8 @@
       </div>
       <div class="header__preview">
         <p class="header__preview-name-title">Функциональное питание для котов</p>
-        <p class="header__preview-logan">Занялся собой? Займись котом!</p>
-        <img class="header__preview-img" src="img/header/index-can-mobile.jpg" width="280" height="270" alt="изображение товара">
+        <p class="header__preview-slogan">Занялся собой? Займись котом!</p>
+        <img class="header__preview-img" src="img/header/index-can-mobile.png" width="280" height="270" alt="изображение товара">
         <a class="header__preview-button" href="form.html">подобрать программу</a>
       </div>
     </header>
@@ -40,14 +40,14 @@
         <h2 class="visually-hidden">Программы питания магазина Кэт энерджи</h2>
         <div class="programs__wrapper">
           <ul class="programs__list">
-            <li class="programs__item program-slim">
+            <li class="programs__item programs__slim">
               <h3 class="programs__name">похудение</h3>
               <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету!
                 Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a class="programs__link" href="catalog.html">каталог slim</a>
             </li>
-            <li class="programs__item program-pro">
-              <h3 class="programs__name">Набор массы</h3>
+            <li class="programs__item programs__pro">
+              <h3 class="programs__name programs__name-pro">Набор массы</h3>
               <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак?
                 Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a class="programs__link" href="catalog.html">каталог pro</a>
@@ -77,41 +77,42 @@
           <dl class="sample__list">
             <div class="sample__item">
               <dt class="sample__number">5 КГ</dt>
-              <dd class="sample__description">снижение веса</dd>
+              <dd class="sample__description">снижение <br> веса</dd>
             </div>
             <div class="sample__item">
               <dt class="sample__number">60 ДНЕЙ</dt>
-              <dd class="sample__description">затрачено времени</dd>
+              <dd class="sample__description">затрачено <br> времени</dd>
             </div>
           </dl>
           <p class="sample__expenses">Затраты на питание: 15 000 РУБ.</p>
-          <div class="sample__slider slider">
-            <img class="slider__img-before" src="#" alt="Фото кота до программы">
-            <img class="slider__img-after" src="#" alt=" Фото кота после программы">
-            <p>было</p>
-            <div class="slider__range-controls range-controls">
-              <div class="range-controls__scale">
-                <div class="range-controls__bar"></div>
+          <div class="sample__slider">
+            <img class="sample__slider-img-before" src="../img/sample/cat-fat.png" alt="Фото кота до программы">
+            <img class="sample__sliderimg-after" src="../img/sample/cat-skinny.png" alt=" Фото кота после программы">
+            <button class="sample__slider-button" type="button">было</button>
+            <div class="sample__slider-range-controls">
+              <div class="sample__slider-scale">
+                <div class="sample__slider-bar"></div>
               </div>
-              <div class="range-controls__toggle"></div>
+              <div class="sample__slider-toggle"></div>
             </div>
-            <p>стало</p>
+            <button class="sample__slider-button" type="button">стало</button>
           </div>
         </div>
       </section>
-      <section class="contacts">
+    </main>
+    <footer class="footer">
+      <section class="footer__contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__wrapper">
-          <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая <br>
-            Конюшенная, д. 19/8<br>
-            Санкт-Петербург</p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="320" height="362" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
-        </div>
+        <p class="footer__contacts-title">приглашаем <br> к сотрудничеству <br> дилеров!</p>
+        <p class="footer__contacts-address">ул. Большая <br>
+          Конюшенная, д. 19/8<br>
+          Санкт-Петербург</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="320" height="362" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
       </section>
-      <footer class="footer">
-        <div class="footer__wrapper">
-          <img class="footer__logo" src="img/logo/logo-2.svg" width="128" height="24" alt="Логотип-название cat energy">
+      <div class="footer__wrapper">
+        <a class="footer__logo"><img src="img/logo/logo-2.svg" width="128" height="24" alt="Логотип-название cat energy"></a>
+        <section class="footer__social">
+          <h2 class="visually-hidden">Мы в оциальных сетях</h2>
           <ul class="footer__social-list">
             <li class="footer__social-item">
               <a href="#"><img src="img/icon/vk.svg" alt="Иконка Вконтакте"></a>
@@ -119,17 +120,15 @@
             <li class="footer__social-item">
               <a href="#"><img src="img/icon/insta.svg" alt="Иконка Инстаграм"></a>
             </li>
-            <li class="footer__social-item"><a href="#"><img src="img/icon/fb.svg" alt="Иконка Фейсбук"></a></li>
+              <li class="footer__social-item"><a href="#"><img src="img/icon/fb.svg" alt="Иконка Фейсбук"></a></li>
           </ul>
-          <div class="footer__copyright copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            <a class="copyright__link-logo"><img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип htmlacademy"></a>
-          </div>
-        </div>
-
-      </footer>
-
-
-    </main>
+        </section>
+        <section class="footer__copyright">
+          <h2 class="visually-hidden">Копирайт</h2>
+          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="footer__copyright-link-logo"><img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип htmlacademy"></a>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>

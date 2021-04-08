@@ -37,7 +37,7 @@
 .header__main-nav-item {
   padding-top: 22px;
   padding-bottom: 24px;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid @lightgray-border;
   text-align: center;
 
   &:hover {
@@ -54,5 +54,44 @@
   text-decoration: none;
   padding-top: 22px;
   padding-bottom: 24px;
-  color: #000000;
+  color: @black;
+}
+
+.header__preview {
+  background-image: url("../img/header/index-background-desktop.jpg");
+  background-repeat: no-repeat;
+}
+
+.header__preview-name-title {
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: @white;
+}
+
+.header__preview-slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: @white;
+  text-align: center;
+}
+
+.header__preview-button {
+  background-color: @basic-green;
+  color: @white;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 7px 73px 7px 73px;
+
+  &:hover {
+    background-color: @basic-green-hover;
+  }
+
+  &:focus,
+  &:active {
+    color: @basic-green-focus;
+  }
 }

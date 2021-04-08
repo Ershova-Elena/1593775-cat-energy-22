@@ -1,0 +1,127 @@
+.sample {
+  background-color: @background-sample;
+}
+
+.sample__wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.sample__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: normal;
+  padding-top: 27px;
+}
+
+.sample__tetx {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: @special_dark-grey;
+}
+
+.sample__number {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.sample__description {
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: @special_dark-grey;
+  text-align: center;
+  margin: 0;
+}
+
+.sample__item {
+  position: relative;
+  width: 124px;
+  margin: 30px;
+}
+
+.sample__item::before {
+  content: "";
+  width: 124px;
+  height: 56px;
+  position: absolute;
+  background-image: url("../img/sample/weight-back.svg");
+}
+
+.sample__expenses {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sample__slider-button {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  border: none;
+  background-color: transparent;
+}
+
+.sample__slider-scale {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  background-color: @white;
+  border: 1px solid @border-sample;
+  border-radius: 6px;
+}
+
+.sample__slider-bar {
+  position: absolute;
+  width: 35px;
+  height: 6px;
+  top: 4px;
+  left: 6px;
+  border-radius: 6px;
+  background-color: @basic-green;
+}
+
+.sample__slider-toggle {
+  display: none;
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid @border-sample;
+  background-color: @white;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px 0 @shadow-toogle;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: @basic-green;
+    border-radius: 50%;
+    position: absolute;
+    top: 13px;
+    left: 13px;
+  }
+
+  &:hover {
+    box-shadow: 0 2px 4px 0 @shadow-toogle-hover;
+  }
+
+  &:focus,
+  &:active {
+    border: 1px solid @basic-green;
+    box-shadow: none;
+  }
+}
