@@ -1,0 +1,83 @@
+
+.page-catalog__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.page-catalog__list-card {
+  border-top: 1px solid @lightgray-border;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-catalog__more-goods-title {
+  position: relative;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @contact-title;
+  padding-top: 78px;
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: @plus;
+    position: absolute;
+    top: 33px;
+    left: 151px;
+  }
+
+  &::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: @plus;
+    position: absolute;
+    top: 33px;
+    left: 151px;
+    transform: rotate(90deg);
+  }
+}
+
+.page-catalog__more-goods-tetx {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: @special_dark-grey;
+}
+
+.page-catalog__more-goods-button {
+  display: block;
+  width: 280px;
+  background-color: @basic_grey;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: @special_dark-grey;
+  text-decoration: none;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: @hover-button-more-goods;
+  }
+
+  &:focus,
+  &:active {
+    color: @focus-button-more-goods;
+  }
+}

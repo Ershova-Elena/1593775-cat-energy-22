@@ -1,0 +1,57 @@
+.card {
+  width: 280px;
+  border-bottom: 1px solid @lightgray-border;
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 24px;
+}
+
+.card__title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @dark-grey;
+  text-decoration: none;
+}
+
+.card__list-characteristic {
+  margin-bottom: 9px;
+  margin-top: 18px;
+}
+
+.card__list-characteristic-item {
+  display: flex;
+  justify-content: space-between;
+  width: 142px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: @special_dark-grey;
+}
+
+.card__order-button {
+  display: block;
+  background-color: @basic-green;
+  color: @white;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 280px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &:hover {
+    background-color: @basic-green-hover;
+  }
+
+  &:focus,
+  &:active {
+    color: @basic-green-focus;
+  }
+}
