@@ -60,13 +60,11 @@
   &:active {
     border: 2px solid @special_dark-grey;
   }
-}
 
-/*
-.form__cat-data-input--error {
-  border: 2px solid @error;
+  &:invalid {
+    border: 2px solid @error;
+  }
 }
-*/
 
 .form__program-selection {
   border-bottom: 1px solid @lightgray-border;
@@ -144,15 +142,32 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
+  min-width: 125px;
 
   &::after {
     content: "";
     flex-grow: 1;
     flex-shrink: 0;
+    margin-top: 7px;
+    margin-left: 22px;
     height: 2px;
     background-color: @basic-green;
-    margin-left: 22px;
-    margin-top: 5px;
+  }
+}
+
+.form__owner-contacts-title {
+  position: relative;
+
+  &::after {
+    content: "";
+    flex-grow: 1;
+    flex-shrink: 0;
+    position: absolute;
+    right: 0;
+    top: 7px;
+    height: 2px;
+    background-color: @basic-green;
+    min-width: 33%;
   }
 }
 
